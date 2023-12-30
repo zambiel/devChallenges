@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarado Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__imagen" src="img/alarado-icon-homepage.svg" alt="img logo">
+        </div>
+        <div class="header__menuHamburguesa">
+            <span id="menuHamburguesa" class="material-symbols-outlined">
+                menu
+            </span>
+            <div id="menuDesplegado" class="menuDesplegado">
+                <div class="close">
+                    <span id="close" class="material-symbols-outlined">
+                        close
+                    </span>
+                </div>
+                <a href="#" class="header__menuDesplegado">About Us</a>
+                <a href="#" class="header__menuDesplegado">Product</a>
+                <a href="#" class="header__menuDesplegado">Resource</a>
+                <a href="#" class="header__menuDesplegado">Contact</a>
+                <div id="darkMode">
+                    <span class="moon moon-desplegada material-symbols-outlined">
+                        dark_mode
+                    </span>
+                </div>
+            </div>
+        </div>
+        <nav class="header__navegacion">
+            <a href="#" class="header__link">About Us</a>
+            <a href="#" class="header__link">Product</a>
+            <a href="#" class="header__link">Resource</a>
+            <a href="#" class="header__link">Contact</a>
+        </nav>
+        <div id="darkMode2">
+            <span class="moon2 material-symbols-outlined">
+                dark_mode
+            </span>
+        </div>
+    </header>
+    <main class="hero">
+        <div class="hero__contenido">
+            <h4 class="hero__h4">😎  Simple way to communicate</h4>
+            <h1 class="hero__principal">Actions for Accessibility in Design</h1>
+            <p class="hero__parrafo">The fastest way to build and deploy websites with resusable components.</p>
+            <div class="hero__botones">
+                <button class="hero__botonPrincipal">Get Started</button>
+                <button class="hero__botonSecundario">Get live demo</button>
+            </div>
+            <div class="hero__beneficios">
+                <img class="hero__icono" src="img/Done_ring_round_fill.svg" alt="">
+                <h5 class="hero__beneficio">No credit card required</h5>
+                <img class="hero__icono" src="img/Done_ring_round_fill.svg" alt="">
+                <h5 class="hero__beneficio">No software to install</h5>
+            </div>
+        </div>
+        <img class="hero__imagen" src="img/hero-image-simple-homepage.png" alt="img hero">
+    </main>
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>

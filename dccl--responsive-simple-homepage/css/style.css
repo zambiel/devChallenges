@@ -1,0 +1,232 @@
+:root {
+    /* COLORES */
+    --negro: #111729;
+    --gris: #223344;
+    --grisClaro: #909193;
+    --semiBlanco: #F2F9FE;
+    --blanco: #fff;
+    --verde: #4CA154;
+    --azul: #2A4DD0;
+
+    /* FUENTES */
+    --principal: 'Poppins', sans-serif;
+
+    /* SEPARACION */
+    --separacion: 5rem;
+}
+.todo {
+    background-color: #111729;
+}
+.todo h1 {
+    color: #F2F9FE;
+}
+.todo a:first-of-type {
+    color: #F2F9FE;
+}
+.todo span {
+    color: #F2F9FE;
+}
+.todo .menuDesplegado {
+    background-color: #111729;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.white {
+    color: white;
+}
+body {
+    font-family: var(--principal);
+    font-size: 1.8rem;
+    margin: var(--separacion);
+    background-color: var(--semiBlanco);
+}
+h1 {
+    color: var(--negro);
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grisClaro);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+button {
+    all: unset;
+}
+/* UTILIDADES */
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* HEADER */
+@media (max-width: 1020px) {
+    .header__navegacion .header__link {
+        display: none;
+    }
+    .header__menuHamburguesa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__menuHamburguesa span {
+        display: block;
+    }
+    .material-symbols-outlined {
+        font-size: 36px;
+        cursor: pointer;
+    }
+    .menuDesplegado {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 740px;
+        padding: 40px;
+        position: absolute;
+        display: none;
+    }
+    .close {
+        text-align: end;
+        margin-bottom: 20px;
+        display: block;
+
+    }
+    .mostrarNav {
+        display: block;
+    }
+    .ocultarNav {
+        display: none;
+    }
+    
+    .header__menuDesplegado {
+        font-size: 45px;
+    }
+    .moon {
+        display: none;
+    }
+    .moon-desplegada {
+        text-align: center;
+    }
+    .moon2 {
+        display: none;
+    }
+
+}
+@media (min-width: 1024px) {
+    .header__menuHamburguesa {
+        display: none;
+    }
+    .header__navegacion {
+        display: block;
+    }
+    .menuDesplegado {
+        display: none;
+    }
+    .close {
+        display: none;
+    }
+    .moon2 {
+        display: block;
+        cursor: pointer;
+
+    }
+}
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: calc(var(--separacion) * 2);
+}
+.header__link {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-right: var(--separacion);
+}
+a:first-of-type {
+    color: var(--gris);
+}
+a:last-of-type {
+    margin-right: 0;
+}
+
+/* HERO */
+
+@media (min-width: 1024px) {
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .hero__imagen {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.moon {
+    cursor: pointer;
+}
+.whiteMoon {
+    color: #fff;
+}
+
+.hero__h4 {
+    text-transform: uppercase;
+    color: var(--gris);
+    font-size: 1.4rem;
+}
+.hero__parrafo {
+    color: var(--grisClaro);
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.hero__botonPrincipal {
+    background-color: var(--azul);
+    border-radius: 1rem;
+    text-transform: uppercase;
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    font-weight: 500;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.hero__botonSecundario {
+    color: var(--azul);
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+}
+.hero__beneficios {
+    display: flex;
+    flex-direction: row;
+    margin-top: calc(var(--separacion) - 2rem);
+}
+.hero__beneficio {
+    margin: 1rem;
+    color: var(--grisClaro);
+    font-weight: 500;
+}
